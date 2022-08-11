@@ -1,0 +1,416 @@
+:root {
+    --intro-and-email-signup-background: hsl(217, 28%, 15%);
+    --main-background: hsl(222, 26%, 15%);
+    --footer-background: hsl(218, 50%, 9%);
+    --testimonials-background: hsl(219, 30%, 18%);
+    --start-effect-btn: hsl(176, 68%, 64%);
+    --end-effect-btn: hsl(198, 60%, 50%);
+    --error: hsl(0, 100%, 63%);
+    --text-color: #dad8d8;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    background: linear-gradient(180deg,var(--main-background) 42%, white);
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    padding: 2rem;
+    z-index: 0;
+}
+
+/* Header */
+main .header-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+
+.header-flex > h1.header-title{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.header-flex ul.header-menu__list {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+/* All links same CSS */
+a.link {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+a.link:hover, a.link:active, a.link:focus {
+    opacity: .7;
+    text-decoration: underline;
+}
+
+/* Main hero first Section */
+.hero {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 700px;
+}
+
+.hero-img-container {
+    max-width: 740px;
+    max-height: 683px;
+}
+
+div.hero-img-container .img-content {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero__text-container {
+    text-align: center;
+}
+
+.hero .hero__text-container h2.hero-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #FFF;
+    line-height: 1.5;
+
+    /* effect */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+p.hero-description {
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+a.btn {
+    display: inline-block;
+    min-width: 200px;
+    background: linear-gradient(to right, var(--start-effect-btn), var(--end-effect-btn));
+    padding: 16px 0;
+    margin-top: 1.8rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #FFF;
+}
+
+a.btn:hover, a.btn:focus {
+    opacity: .8;
+}
+
+/* second section box*/
+
+.features-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 20px;
+}
+
+.feature {
+    text-align: center;
+}
+
+/* third section box */
+.demo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10rem;
+}
+
+.demo-text-container {
+    width: 100%;
+    margin: 1.8rem 0;
+}
+
+.demo-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.demo-description {
+    margin: .7rem 0;
+    line-height: 1.6;
+}
+
+
+.demo-link {
+    margin-top: .7rem;
+    padding-bottom: 7px;
+    font-size: 1.3rem;
+    border-bottom: 1px solid var(--end-effect-btn);
+    color: var(--end-effect-btn);
+}
+
+.demo-link .arrow-demo {
+    vertical-align: middle;
+}
+
+/* testimonials container */
+
+.testimonials-content {
+    margin: 5rem auto;
+    padding: auto;
+}
+
+.testimonials-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 30rem;
+}
+
+
+/* Cards testimonials */
+/* From https://css.glass */
+.card {
+    align-self: center;
+    max-width: 400px;
+    background: rgba(46, 43, 43, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(46, 43, 43, 0.3);
+}
+
+.card-content {
+    padding: 2rem 1.5rem;
+}
+
+.card-content p.card-text {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+.card-flex-container {
+    display: flex;
+    flex-flow:row wrap;
+    gap: 1rem;
+    align-items: center;
+    line-height: 1.5;
+}
+
+p.card-text-bold{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card-flex-container .img-card {
+    border-radius: 50%;
+}
+
+/* Registration form box */
+.registration-content {
+    max-width: 840px;
+    min-width: 340px;
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1.8rem 1.2rem;
+    position: absolute;
+    transform: translate(-50%, -65%);
+    background: var(--main-background);
+}
+
+.registration-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #FFF;
+}
+
+.registration-txt {
+    max-width: 620px;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--text-color)
+}
+
+.form {
+    margin: 1.5rem auto;
+}
+
+fieldset {
+    border: none;
+}
+
+.form-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+.text-input {
+    display: inline-block;
+    width: 100%;
+    min-width: 200px;
+    padding: 16px 25px;
+    background: #FFF;
+    border-radius: 25px;
+    color: #000;
+    border: transparent;
+}
+
+button, input {
+    overflow: visible;
+}
+
+.btn-form {
+    display: inline-block;
+    min-width: 200px;
+    padding: 1.6rem 0;
+    width: 100%;
+    background: linear-gradient(to right, var(--start-effect-btn), var(--end-effect-btn));
+    border-radius: 25px;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-form:hover {
+    opacity: .9;
+}
+
+
+/* Footer */
+.footer {
+    width:100%;
+    background-image: url('../assets/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: var(--testimonials-background);
+    padding: 2rem;
+}
+
+.div-icon {
+    margin-bottom: 2rem;
+}
+
+.footer-flexColumn {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 840px;
+}
+
+.footer-flexRow {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4rem;
+    padding-top: 1rem;
+}
+
+@media only screen and (min-width: 850px) {
+    .footer-flexRow {
+        justify-content: space-evenly;
+    }
+}
+
+.first-flexbox {
+    display: flex;
+    align-items: flex-end;
+    min-width: 50%;
+}
+
+.first-flexbox li{
+    line-height: 1.6;
+    padding-bottom: 2rem;
+}
+
+.first-flexbox  p.contact-list__txt {
+    display: inline;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+.contact-list {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contact-list__flex-container {
+    max-width: 400px;
+    padding-right: 30px;
+}
+
+.sec-flexbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media only screen and (min-width: 850px) {
+    .sec-flexbox {
+        width: 170px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.sec-flexbox li {
+    padding-bottom: 2rem;
+}
+
+/* Social Media Buttons */
+.socialMediaButtons {
+    align-self: center;
+    width: 100%;
+}
+
+@media only screen and (min-width: 955px) {
+    .socialMediaButtons {
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        height: 100%;
+    }
+}
+.footer-menu-flex__list {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+}

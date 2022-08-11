@@ -4,7 +4,7 @@ Thanks for checking out this [Frontend Mentor](https://www.frontendmentor.io/) c
 
 <h1 align="center">Fylo dark theme landing page</h1>
 
-<img src="`./assets/design/responsive-mockup.png`" width="49%" height="auto"> <img src="`./assets/design/mobile-responsive.png`" width="49%" height="auto">
+<img src="./assets/design/responsive-mockup.png" width="48%" height="auto"> <img src="./assets/design/layout.gif" width="49%" height="365px">
 
 Contents
 
@@ -30,7 +30,8 @@ Users should be able to:
 
 ### Layout
 
-<img src="./assets/layout.gif" width="100%" height="auto">
+<img src="./assets/design/mobile-responsive.png" width="auto" height="800px">
+
 
 ## Tech
 

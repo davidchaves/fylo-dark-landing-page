@@ -80,9 +80,8 @@ and Custom colors
 
 ## Features
 
-* 🎨 Focus on menu-list using the general sibling selector.
-* 📱 Mobile-first design workflow.
-* 😎  I added and created modal Login form, TODO list app and social media login form.
+* 🎨 Focus on menu-list
+* 📱 Responsive design with mobile-first workflow
 * 🧚‍♂️ A little bit of color customization and background.
 
 ## Author
